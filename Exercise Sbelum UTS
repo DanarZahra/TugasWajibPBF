@@ -40,5 +40,21 @@ def decrypt(pwd):
   return password
 
 
-      
+      # b. Apa output yang dihasilkan dari program tersebut jika input password adalah ‘anakanakcerdas2020’ ?
+while True:
+    selection = input('Apakah kamu ingin melakukan enkripsi? [Y/N]')
+    if selection == 'Y':
+        inpass = input ("Masukan Password yang ingin dienksripsi: ")
+        encrypted = encrypt(inpass)
+        print('Password Kamu adalah : ', (encrypted))
+    elif selection == 'N':
+         break
+    else:
+        print('Invalid Input')
+        continue
+  
+# c. (Bonus) User tersebut lupa password asli yang dia inputkan ke dalam program tersebut, 
+#password setelah dienkripsi adalah ‘Sc-TV-Sc-TS+T[-Sc-TQ+TV-T[-Sf-Sc-T\-Sc-Qh-Qf-Qh-Qf-TS+Sg-Se-Sg-’. Bantulah user tersebut mendapatkan password asli nya!encrypted1 = 'Sc-TV-Sc-TS+T[-Sc-TQ+TV-T[-Sf-Sc-T\-Sc-Qh-Qf-Qh-Qf-TS+Sg-Se-Sg-'
+print('encrypted password :', encrypted1)
+print('decrypted password :', decrypt(encrypted1))
 
